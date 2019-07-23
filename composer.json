@@ -1,0 +1,44 @@
+{
+    "name": "jinseokoh/bootpay",
+    "description": "Unofficial BootPay handler package for Laravel",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["Laravel", "BootPay"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chuck JS. Oh",
+            "email": "jinseokoh@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JinseokOh\\BootPay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JinseokOh\\BootPay\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JinseokOh\\BootPay\\BootPayServiceProvider"
+            ],
+            "aliases": {
+                "BootPay": "JinseokOh\\BootPay\\BootPayFacade"
+            }
+        }
+    }
+}
