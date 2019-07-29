@@ -13,6 +13,8 @@ class BootPayServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom( __DIR__.'/config/bootpay.php', 'bootpay');
+
         $this->app->singleton(BootPayHandler::class, function ($app) {
             return new BootPayHandler(new BootPayClient());
         });
