@@ -2,36 +2,34 @@
 
 namespace JinseokOh\BootPay\Test;
 
-use JinseokOh\BootPay\BootPayFacade;
 use JinseokOh\BootPay\BootPayHandler;
 
 class BootPayHandlerTest extends TestCase
 {
     public function testClientApplicationIdIsNotNull()
     {
-        $applicationId = \BootPay::getClient()->getApplicationId();
+        $handler = app(BootPayHandler::class);
+        $applicationId = $handler->getClient()->getApplicationId();
 
         $this->assertNotNull($applicationId);
     }
 
     public function testClientPrivateKeyIsNotNull()
     {
-        $privateKey = \BootPay::getClient()->getPrivateKey();
+        $handler = app(BootPayHandler::class);
+        $privateKey = $handler->getClient()->getPrivateKey();
 
         $this->assertNotNull($privateKey);
     }
 
-    public function testClientAccessTokenIsNull()
+    /**
+     * this test works only if your BootPay credentials are provided correctly
+     */
+    public function ClientAccessTokenIsNull()
     {
-        $accessToken = \BootPay::getClient()->getAccessToken();
-
-        $this->assertNull($accessToken);
-    }
-
-    public function clientAccessTokenIsNotNull()
-    {
-        \BootPay::setAccessToken();
-        $accessToken = \BootPay::getClient()->getAccessToken();
+        $handler = app(BootPayHandler::class);
+        $handler->setAccessToken();
+        $accessToken = $handler->getClient()->getAccessToken();
 
         $this->assertNotNull($accessToken);
     }

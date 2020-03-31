@@ -26,8 +26,8 @@ class TestCase extends OrchestraTestCase
     protected function getEnvironmentSetUp($app): void
     {
         $app['config']->set('bootpay.base_uri', 'https://dev-api.bootpay.co.kr');
-        $app['config']->set('bootpay.app_id', 'fake-bootpay-app-id');
-        $app['config']->set('bootpay.private_key', 'fake-bootpay-private-key');
+        $app['config']->set('bootpay.app_id', 'set-your-bootpay-app-id-here');
+        $app['config']->set('bootpay.private_key', 'set-your-bootpay-private-key-here');
     }
 
     /**

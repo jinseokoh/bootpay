@@ -1,8 +1,8 @@
 {
     "name": "jinseokoh/bootpay",
-    "description": "Unofficial BootPay handler package for Laravel",
+    "description": "Unofficial BootPay package for Laravel",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["Laravel", "BootPay"],
     "license": "MIT",
     "authors": [
@@ -18,8 +18,8 @@
         "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5",
-        "orchestra/testbench": "^3.5"
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^4.0"
     },
     "autoload": {
         "psr-4": {
