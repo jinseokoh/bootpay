@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Cache;
 
 class BootPayClient
 {
+    const ACCESS_TOKEN_KEY = 'bootpay-access-token';
+
     private $client;
     private $applicationId;
     private $privateKey;
@@ -44,11 +46,7 @@ class BootPayClient
      */
     public function getAccessToken(): ?string
     {
-        if ($accessToken = Cache::get('accessToken')) {
-            return $accessToken;
-        }
-
-        return null;
+        return Cache::get(self::ACCESS_TOKEN_KEY);
     }
 
     /**
@@ -56,7 +54,7 @@ class BootPayClient
      */
     public function setAccessToken(string $token): void
     {
-        Cache::put('accessToken', $token, 60 * 25); // valid for 25 mins
+        Cache::put(self::ACCESS_TOKEN_KEY, $token, 60 * 25); // valid for 25 mins
     }
 
     /**

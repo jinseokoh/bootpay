@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64ca0b93ccd85b7f242821531675acf0",
+    "content-hash": "39c766ca32c93fb3355686fe7b0cb2ab",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1186,12 +1186,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "0649029a088e599743d149adaa9798c3d8f79416"
+                "reference": "f10e22cf546704fab1db4ad4b9dedbc5c797a0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0649029a088e599743d149adaa9798c3d8f79416",
-                "reference": "0649029a088e599743d149adaa9798c3d8f79416",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f10e22cf546704fab1db4ad4b9dedbc5c797a0dc",
+                "reference": "f10e22cf546704fab1db4ad4b9dedbc5c797a0dc",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1249,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-03-31T10:01:33+00:00"
+            "time": "2020-03-31T13:43:19+00:00"
         },
         {
             "name": "opis/closure",
@@ -3568,12 +3568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "aeaa78394daeacf6ea33ff30a160870c21bfa2ce"
+                "reference": "bce6f33b4ba830e9de2684bd8515f65923c628f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/aeaa78394daeacf6ea33ff30a160870c21bfa2ce",
-                "reference": "aeaa78394daeacf6ea33ff30a160870c21bfa2ce",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/bce6f33b4ba830e9de2684bd8515f65923c628f3",
+                "reference": "bce6f33b4ba830e9de2684bd8515f65923c628f3",
                 "shasum": ""
             },
             "require": {
@@ -3650,7 +3650,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2020-03-30T15:04:12+00:00"
+            "time": "2020-04-01T06:18:20+00:00"
         },
         {
             "name": "symfony/mime",
