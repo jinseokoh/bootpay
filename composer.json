@@ -2,7 +2,7 @@
     "name": "jinseokoh/bootpay",
     "description": "Unofficial BootPay package for Laravel",
     "type": "library",
-    "version": "1.0.1",
+    "version": "v1.0.2",
     "keywords": ["Laravel", "BootPay"],
     "license": "MIT",
     "authors": [
