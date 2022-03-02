@@ -19,7 +19,7 @@ composer require jinseokoh/bootpay
 
 ## 사용법
 
-Laravel 5.5 부터 제공하는 Package Auto-Discovery 기능으로, 이 패키지를 인스톨함과 동시에 ServiceProvider 와 Facade 등록이 자동으로 된다.
+Laravel 5.5 부터 제공하는 Package Auto-Discovery 기능으로, 이 패키지를 인스톨함과 동시에 ServiceProvider 와 Facade 등록이 자동으로 된다. 새로운 Laravel 8/9 버젼의 지원은 1.2.0 버젼부터 가능하다.
 
 ### 설정
 
